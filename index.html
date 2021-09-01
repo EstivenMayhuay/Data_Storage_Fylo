@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Data Storage Fylo">
+  <meta name="author" content="Estiven Mayhuay">
+  <link rel="stylesheet" href="main.css">
+  <title>Fylo Data Storage</title>
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+
+  <!-- fonts google -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- boxicons -->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="storage">
+    <!-- storage tools -->
+    <div class="storage__tools">
+      <p class="logo"></p>
+      <div class="tools">
+        <p class="icon-File"><img src="./images/icon-document.svg" alt="icon file"></p>
+        <p class="icon-Save"><img src="./images/icon-folder.svg" alt="icon folder"></p>
+        <p class="icon-Upload"><img src="./images/icon-upload.svg" alt="icon upload"></p>
+      </div>
+    </div>
+
+    <!-- storage view-->
+    <div class="storage__view">
+      <h1 class="title">You've used <b class="fontBold">835 GB</b> of your storage</h1>
+
+      <!-- bar progress -->
+      <div class="barProgress">
+        <div class="contentBar">
+          <div class="bar" id="itemProgress"></div>
+        </div>
+        <span class="item item--left">0 GB</span>
+        <span class="item item--right">1000 GB</span>
+
+        <!-- preview Storage -->
+        <div class="previewStorage">
+          <h2 id="leftStorage">185</h2>
+          <b>GB LEFT</b>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
