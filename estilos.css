@@ -23,7 +23,7 @@ body {
   max-width: 100%;
   min-height: 100vh;
   background: url(./images/bg-mobile.png) no-repeat;
-  background-position: center bottom;
+  background-position: center top;
   background-size: cover;
   animation: changeBackBody 3s ease alternate infinite;
 }
@@ -32,7 +32,7 @@ body {
   from {
     background: url(./images/bg-mobile.png)  no-repeat;
     background-size: cover;
-    background-position: center bottom;
+    background-position: center top;
   }
   to {
     background: url(./images/bg-desktop.png) no-repeat;
