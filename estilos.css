@@ -25,6 +25,21 @@ body {
   background: url(./images/bg-mobile.png) no-repeat;
   background-position: center top;
   background-size: cover;
+  /*transition: background .6s ease;*/
+  animation: changeBackBody 3s ease alternate infinite;
+}
+
+@keyframes changeBackBody {
+  from {
+    background: url(./images/bg-mobile.png)  no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+  to {
+    background: url(./images/bg-desktop.png) no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+  }
 }
 
 .storage {
@@ -97,7 +112,6 @@ body {
 
 /* Bar progress */
 .barProgress {
-  /*outline: 2px solid blue;*/
   position: relative;
   margin: 0 0 24px 0;
 }
@@ -137,6 +151,7 @@ body {
   position: absolute;
   color: var(--pale-blue);
   font-weight: bold;
+  top: 35px;
 }
 
 .item--left {
@@ -147,9 +162,14 @@ body {
   right: 0;
 }
 
+.storage__view {
+  position: relative;
+}
+
 .previewStorage {
+  /*outline: 2px solid red;*/
   position: absolute;
-  top: 58px; left: 0; right: 0;
+  bottom: -50px; right: 0; left: 0;
   margin:0 auto;
   width: 50%;
   background: var(--pale-blue);
@@ -168,4 +188,60 @@ body {
   font-weight: 600;
   text-align: center;
   color: var(--grayish-blue);
+}
+
+/* Desktop */
+@media screen and (min-width: 1000px) {
+  .storage {
+    flex-flow: row nowrap;
+  }
+
+  .storage__tools {
+    padding-right: calc(16px * 8);
+  }
+
+  .storage__view {
+    align-self: flex-end;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 24px 32px;
+  }
+
+  .previewStorage {
+    /*outline: 2px solid blue;*/
+    position: relative;
+    position: absolute;
+    top: -60px; right: 24px; left: unset; bottom: unset;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 140px;
+    height: 35px;
+    margin: 0;
+    background: white;
+    border-radius: 8px 8px 0 8px;
+  }
+
+  .previewStorage::after {
+    --wTriangle: 30px;
+
+    content: '';
+    position: absolute;
+    right: 0; bottom: -30px;
+    width: var(--wTriangle);
+    height: var(--wTriangle);
+    background: inherit;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+  }
+
+  .barProgress {
+    margin: 0 0 24px 0;
+  }
+
+  .contentBar {
+    width: 460px;
+  }
 }

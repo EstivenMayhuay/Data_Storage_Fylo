@@ -25,9 +25,11 @@ function Disk (total, used) {
 function displayDisk (used, left) {
   let itemBar = document.querySelector('#itemProgress')
       leftDisk = document.querySelector('#leftStorage'),
+      itemUsed = document.querySelector('#dataUsed'),
       percent = Math.floor((used * 100) / 1000);
 
-  itemBar.style.width = `${percent}%`; // using in the disk
+  itemUsed.textContent = `${used} GB`; // used in disk in GB
+  itemBar.style.width = `${percent}%`; // using in the disk percent
   leftDisk.textContent = left.toString(); // rest in the disk
 }
 
@@ -35,8 +37,8 @@ setInterval(() => {
   let disk = new Disk(1000, randomUsed(80,1001));
   displayDisk(disk.used, disk.getLeft());
 
-  /*
+/*
   log('usado: ' + disk.used);
   log('restante: ' + disk.getLeft());
-  */
-}, 2000);
+*/
+}, 3500);
