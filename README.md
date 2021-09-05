@@ -47,4 +47,4 @@ I learned how to use **align-self** in flexbox. I also learned how to use javasc
 ## **Author**
 
 - Facebook => [Estiven Mayhuay](https://www.facebook.com/estivenMayhuay/)
-- Frontend Mentor - [@EstivenM99](https://www.frontendmentor.io/profile/EstivenM99)
+- Frontend Mentor => [@EstivenM99](https://www.frontendmentor.io/profile/EstivenM99)
