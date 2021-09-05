@@ -1,5 +1,7 @@
 # **Fylo Data Storage**
 
+![logo fylo](./images/logo.svg)
+
 This is a solution to the [Fylo data storage](https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n), built for a big porpouse help other developers
 
 ## **Table of contents**
