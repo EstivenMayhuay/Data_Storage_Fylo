@@ -25,6 +25,7 @@ body {
   background: url(./images/bg-mobile.png) no-repeat;
   background-position: center top;
   background-size: cover;
+  transition: all .6s ease;
   animation: changeBackBody 3s ease alternate infinite;
 }
 
