@@ -29,8 +29,7 @@ Built a layout for Fylo
 
 ### **Links**
 
-- Solution URL: [https://github.com/EstivenM99/Data_Storage_Fylo](https://github.com/EstivenM99/Data_Storage_Fylo)
-- Live Site URL: [https://estivenm99.github.io/Data_Storage_Fylo/](https://estivenm99.github.io/Data_Storage_Fylo/)
+- Live Site URL: [https://estivenmayhuay.github.io/Data_Storage_Fylo/]https://estivenmayhuay.github.io/Data_Storage_Fylo/(https://estivenmayhuay.github.io/Data_Storage_Fylo/)
 
 ## **My process**
 
