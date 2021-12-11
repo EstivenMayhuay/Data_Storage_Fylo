@@ -29,7 +29,7 @@ Built a layout for Fylo
 
 ### **Links**
 
-- Live Site URL:[https://estivenmayhuay.github.io/Data_Storage_Fylo/] (https://estivenmayhuay.github.io/Data_Storage_Fylo/(https://estivenmayhuay.github.io/Data_Storage_Fylo/)
+- Live Site URL:[https://estivenmayhuay.github.io/Data_Storage_Fylo/](https://estivenmayhuay.github.io/Data_Storage_Fylo/)
 
 ## **My process**
 
